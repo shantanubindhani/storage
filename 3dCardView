@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tilting Card</title>
+  <style>
+    .card {
+      width: 200px;
+      height: 300px;
+      perspective: 800px;
+    }
+
+    .card-content {
+      position: relative;
+      width: 100%;
+      height: 100%;
+      background-color: #3366CC;
+      background-image: url('https://img.freepik.com/free-vector/laptop-with-program-code-isometric-icon-software-development-programming-applications-dark-neon_39422-971.jpg?size=626&ext=jpg');
+      background-size: cover;
+      background-position: center;
+      color: #FFFFFF;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      transform-style: preserve-3d;
+      transition: transform 0.1s;
+      box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.2);
+      z-index: 10;
+    }
+
+    .card:hover .card-content {
+      box-shadow: 0px 20px 40px rgba(0, 0, 0, 0.4);
+    }
+
+    .card-text {
+      font-size: 24px;
+      text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+      transform: translateZ(100px);
+    }
+
+    .card-info {
+      font-size: 18px;
+      text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+      transform: translateZ(65px);
+    }
+
+    .white-border {
+      position: absolute;
+      width: calc(100% - 40px);
+      height: calc(100% - 40px);
+      border: 5px solid #DDD;
+      box-shadow: 0px 0px 5px #fff ;
+      transform: translateZ(30px);
+    }
+  </style>
+</head>
+
+<body>
+  <div class="card" onmousemove="tiltCard(event)" onmouseleave="resetCard(event)">
+    <div class="card-content">
+      <div class="white-border"></div>
+      <h1 class="card-text">Card Title</h1>
+      <p class="card-info">Card Description</p>
+    </div>
+  </div>
+
+  <script>
+    var changeValue = 0.2;
+
+    function tiltCard(event) {
+      const card = document.querySelector('.card');
+      const cardContent = document.querySelector('.card-content');
+      const cardRect = card.getBoundingClientRect();
+      const cardCenterX = cardRect.left + cardRect.width / 2;
+      const cardCenterY = cardRect.top + cardRect.height / 2;
+      const mouseX = event.clientX;
+      const mouseY = event.clientY;
+      const angleX = (mouseY - cardCenterY) * -1 * changeValue;
+      const angleY = (mouseX - cardCenterX) * changeValue;
+
+      cardContent.style.transform = `rotateX(${angleX}deg) rotateY(${angleY}deg)`;
+    }
+
+    function resetCard(event) {
+      const cardContent = document.querySelector('.card-content');
+      cardContent.style.transform = `rotateX(0deg) rotateY(0deg)`;
+    }
+  </script>
+</body>
+
+</html>
