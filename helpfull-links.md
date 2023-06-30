@@ -5,6 +5,7 @@
 | > [machine learning course YT 4-hours][1]
 | > [machine learnig course YT 10-hours][2]
 | > [Design website without code FREE & ONLINE][5]
+| > [static and dynamic badges for customization][8]  e.g : ![alt this thing](https://img.shields.io/github/followers/shantanubindhani)
 ---
 | MISC |
 |---|
@@ -17,3 +18,4 @@
 [5]:https://webflow.com/
 [6]:https://monkeytype.com/
 [7]:https://www.keybr.com/
+[8]:https://shields.io/
