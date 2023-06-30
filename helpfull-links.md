@@ -1,9 +1,4 @@
-[] [machine learning Youtube 4-hours][1]
-[] 
-
-
-
-
+- [machine learning Youtube 4-hours][1]
 
     
 
