@@ -2,10 +2,10 @@
 ### [< BACK ](README.md) 
 | Programming |
 |---|
-| > [machine learning course YT 4-hours][1]
-| > [machine learnig course YT 10-hours][2]
-| > [Design website without code FREE & ONLINE][5]
-| > [static and dynamic badges for customization][8]  e.g : ![alt this thing](https://img.shields.io/github/followers/shantanubindhani)
+| > [Machine learning course YT 4-hours][1]
+| > [Machine learnig course YT 10-hours][2]
+| > [Design website without code, FREE & ONLINE][5]
+| > [Static and dynamic badges for customization][8]  e.g : ![alt this thing](https://img.shields.io/github/followers/shantanubindhani)
 ---
 | MISC |
 |---|
