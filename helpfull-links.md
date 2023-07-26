@@ -10,7 +10,7 @@
 | MISC |
 |---|
 | > [Touch Typing (Learning)][6]
-| > [Touch Typing practice][7]
+| > [Touch Typing (practice)][7]
 
 
 [1]:https://youtu.be/i_LwzRVP7bg
