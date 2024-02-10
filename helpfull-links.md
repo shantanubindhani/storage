@@ -19,6 +19,7 @@
 ---
 | MISC |
 |---|
+| > [github README generator][24]
 | > [simpler alternative to Notion(might be even better)][16]
 | > Widgets : [widgetbox][17], [indify][18]
 | > [project ideas][15]
@@ -49,6 +50,6 @@
 [21]:https://bost.ocks.org/mike/algorithms/
 [22]:https://www.cs.usfca.edu/~galles/visualization/Algorithms.html
 [23]:https://visualgo.net/en
-
+[24]:https://rahuldkjain.github.io/gh-profile-readme-generator/
 
 
